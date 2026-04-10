@@ -1,3 +1,12 @@
-function loadHomeScreen() {
-    return "Home screen loaded with products and categories";
+function fetchData() {
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+        });
 }
+
+fetchData();
