@@ -1,4 +1,11 @@
-function openSettings() {
-    console.log("Settings menu opened");
-    alert("Settings menu opened");
+function showSettingsScreen() {
+    document.body.innerHTML = `
+        <h2>Settings</h2>
+        <ul>
+            <li>Account</li>
+            <li>Notifications</li>
+            <li>Privacy</li>
+            <li>General</li>
+        </ul>
+    `;
 }
