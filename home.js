@@ -1,12 +1,4 @@
-function fetchData() {
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
-        });
+function openSettings() {
+    console.log("Settings menu opened");
+    alert("Settings menu opened");
 }
-
-fetchData();
